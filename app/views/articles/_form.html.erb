@@ -1,0 +1,26 @@
+<%= form_with(model: @article, local: true) do |form| %>
+  <% if @article.errors.any? %>
+    <div style="color: red;">
+      <h3><%= pluralize(@article.errors.count, "error") %> prevented saving:</h3>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body, rows: 10 %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
