@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root "articles#index"
 
+  get "p5js", to: "pages#p5js"
+  get "code", to: "pages#code"
+  get "resume", to: "pages#resume"
+
   resources :articles
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -12,6 +12,9 @@
 /* app/assets/stylesheets/application.css */
 
 /* Basic reset */
+
+@import "./header.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -58,4 +61,31 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #666;
+}
+
+/* Section navigation above "My Articles" */
+.section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.section-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #4B0082; /* matches your header color */
+    border-radius: 8px;
+    text-decoration: none;
+    color: #4B0082;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    min-width: 100px; /* gives them a square-ish feel */
+    text-align: center;
+}
+
+.section-link:hover {
+    background-color: #4B0082;
+    color: #fff;
+    transform: scale(1.05);
 }

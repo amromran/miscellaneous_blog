@@ -5,13 +5,21 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
+  <!-- Load both main CSS and header CSS -->
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "header", "data-turbo-track": "reload" %>
+
   <%= javascript_importmap_tags %>
 </head>
 
 <body>
 <header>
   <h1><%= link_to "RailsJS", root_path %></h1>
+
+  <nav>
+    <%= link_to image_tag("X.svg", alt: "X", width: 24, height: 24), "https://x.com/irasrive", target: "_blank" %>
+    <%= link_to image_tag("GitHub.svg", alt: "GitHub", width: 24, height: 24), "https://github.com/amromran", target: "_blank" %>
+  </nav>
 </header>
 
 <main>
