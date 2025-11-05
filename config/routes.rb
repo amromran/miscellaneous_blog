@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root "articles#index"
 
-  get "p5js", to: "pages#p5js"
-  get "code", to: "pages#code"
+  #get "p5js", to: "pages#p5js"
+  #get "code", to: "pages#code"
   get "resume", to: "pages#resume"
 
   resources :articles
