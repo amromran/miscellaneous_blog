@@ -3,6 +3,9 @@
 
 A modern Ruby on Rails 8 application for personal blog/site management with PostgreSQL and a basic frontend.
 
+![Home Page](screenshots/Screenshot_2025_My_Blog_2.png)
+![Post Editing](screenshots/Screenshot_2025_My_Blog_1.png)
+
 ## Features
 
 - Article management system (CRUD operations)

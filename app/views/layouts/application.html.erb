@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsJS</title>
+  <title>My Blog</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -14,7 +14,7 @@
 
 <body>
 <header>
-  <h1><%= link_to "RailsJS", root_path %></h1>
+  <h1><%= link_to "My Blog", root_path %></h1>
 
   <nav>
     <%= link_to image_tag("X.svg", alt: "X", width: 24, height: 24), "https://x.com/irasrive", target: "_blank" %>
@@ -27,7 +27,7 @@
 </main>
 
 <footer>
-  <p>&copy; <%= Time.current.year %> RailsJS by Amr Omran</p>
+  <p>&copy; <%= Time.current.year %> Personal Blog by Amr Omran</p>
 </footer>
 </body>
 </html>
