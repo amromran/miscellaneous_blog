@@ -63,7 +63,7 @@ bin/rails server
 
 ### Local Production Test (Docker Compose)
 
-Run the app and a PostgreSQL database locally using Docker. This uses the production image and settings from the Dockerfile.
+Run the app and a PostgreSQL database locally using Docker. Check the Dockerfile.
 
 1. Ensure you have Docker Desktop (or Engine) installed and running.
 2. Copy environment file and fill values:

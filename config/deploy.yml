@@ -5,7 +5,7 @@ service: rails_js
 # Examples:
 #   image: ghcr.io/your-org/rails_js:latest
 #   image: your-docker-username/rails_js:latest
-image: irasrive/rails_js
+image: your_docker_name/rails_js
 
 # Deploy to these servers. Replace with your server IPs or hostnames.
 servers:
